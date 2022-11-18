@@ -1,0 +1,13 @@
+ Sử dụng tab Network trong Developer tools của trình duyệt để phân tích chi tiết các thành phần (request line, request headers, request message body (nếu có)) của một HTTP request khi truy cập vào trang https://www.thegioididong.com/ và tuoitre.vn.
+
+Trang thegioididong:
+    - request line: https://livehelp.tgdd.vn/cache/compiledtemplates/6a93edabde93b6405616caa2626c03ca.css
+    - Method: GET
+    - request header:   Remote Address: 103.48.76.202:443
+                        Referrer Policy: no-referrer-when-downgrade
+
+Trang tuoitre.vn:
+    - request line: https://statictuoitre.mediacdn.vn/web_css/font.2017.11.28.1.min.css
+    - Method: GET
+    - request header:   Remote Address: 123.30.242.10:443
+                        Referrer Policy: strict-origin-when-cross-origin

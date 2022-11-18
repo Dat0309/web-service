@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- Thông tin sinh viên -->
+<DanhSachSinhVien>
+    <SinhVien>
+        <MSSV>1911155</MSSV>
+        <HoTenLot>Nguyễn Anh Nhật </HoTenLot>
+        <Ten>Huy</Ten>
+        <Lop>CTK43</Lop>
+        <GioiTinh>Nam</GioiTinh>
+        <Diem>
+            <LapTrinhMang hinhthuc="QuaTrinh">8.0</LapTrinhMang>
+            <LapTrinhMang hinhthuc="CuoiKy">8.0</LapTrinhMang>
+            <LapTrinhGame hinhthuc="QuaTrinh">7.0</LapTrinhGame>
+            <LapTrinhGame hinhthuc="CuoiKy">8.0</LapTrinhGame>
+        </Diem>
+    </SinhVien>
+    <SinhVien>
+        <MSSV>1911136</MSSV>
+        <HoTenLot>Nguyễn Việt Duy </HoTenLot>
+        <Ten>Danh</Ten>
+        <Lop>CTK43</Lop>
+        <GioiTinh>Nam</GioiTinh>
+        <Diem>
+            <LapTrinhMang hinhthuc="QuaTrinh">8.0</LapTrinhMang>
+            <LapTrinhMang hinhthuc="CuoiKy">8.0</LapTrinhMang>
+            <LapTrinhGame hinhthuc="QuaTrinh">7.0</LapTrinhGame>
+            <LapTrinhGame hinhthuc="CuoiKy">8.0</LapTrinhGame>
+        </Diem>
+    </SinhVien>
+</DanhSachSinhVien>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MusicList>
+  <music>
+    <id>1</id>
+    <name>2 5</name>
+    <singer>Táo</singer>
+  </music>
+  <music>
+    <id>2</id>
+    <name>Tiny Love</name>
+    <singer>Thịnh Suy</singer>
+  </music>
+  <music>
+    <id>3</id>
+    <name>Red Rum</name>
+    <singer>Táo</singer>
+  </music>
+  <music>
+    <id>4</id>
+    <name>Blue Tequila</name>
+    <singer>Táo</singer>
+  </music>
+  <music>
+    <id>5</id>
+    <name>Muộn rồi mà sao còn </name>
+    <singer>Sơn Tùng MTP</singer>
+  </music>
+</MusicList>

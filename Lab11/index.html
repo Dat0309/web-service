@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lấy thông tin từ server</title>
+</head>
+<body>
+    <div type="button" id="btn">Lấy thông tin sinh viên từ server</div>
+    <div id="danh-sach-sv"></div>
+    <script>  
+        const btn = document.getElementById('btn');
+        const sinhVienContainer = document.getElementById('danh-sach-sv');
+
+        btn.onclick = () => {
+            var myRequest = new XMLHttpRequest();
+            myRequest.open('GET', 'https://legiacong.github.io/sinhVien.json');
+            myRequest.onload = function() {
+                if (myRequest.status >= 200 && myRequest.status < 400) {
+                    var myData = JSON.parse(myRequest.responseText);
+                    renderHTML(myData);     
+                } else {
+                    console.log("Đã kết nối đến server nhưng có lỗi tù server gửi về");
+                }
+            };
+            myRequest.onerror = function() {
+                console.log("Lỗi kết nối");
+            }   
+            myRequest.send();                 
+        }
+
+        function renderHTML(data) {
+            var htmlString = "";
+            for (var i = 0; i < data.length; i++ ) {
+                htmlString += "<p>" + data[i].ten + "</p>";
+            }
+            sinhVienContainer.insertAdjacentHTML('beforeend', htmlString);
+        }
+    </script>
+</body>
+</html>

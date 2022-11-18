@@ -1,0 +1,22 @@
+- Để nhận được mã trả về là 1xx:
+    + Khi quá trình xử lý yêu cầu của server đang được thực hiện
+    + Có thể cho quá trình xử lý yêu cầu được thực hiện trong một khoảng thời gian nhất định
+    + Nghĩa là xử lý một đoạn mã này sau đó đợi vài giây sẽ thực hiện tiếp đoạn mã tiếp theo đồng thời cũng gửi phản hồi về cho client trong suốt quá trình xử lý yêu cầu của server. 
+
+- Để nhận được mã trả về là 2xx:
+    + Chức năng hoạt động bình thường
+    + Phần yêu cầu gửi đến server phải đầy đủ và chính xác
+    + Khi đó, server sẽ trả về mã là 2xx
+
+- Để nhận được mã trả về là 3xx:
+    + Nếu lưu thông tin của sinh viên được gửi yêu cầu vào bộ nhớ đệm
+    + Sau khi truy cập vào thông tin của sinh viên đó một lần nữa sẽ xuất hiện mã dạng 3xx do kết quả phản hồi theo yêu cầu đã được lưu vào bộ nhớ đệm của server
+    
+- Để nhận được mã trả về là 4xx:
+    + Địa chỉ trỏ đến server bị sai => không tìm được server nào (404)
+    + Nội dung request được gửi không đúng dạng, các từ khóa không khớp với server yêu cầu.
+
+- Để nhận được mã trả về là 5xx:
+    + Thêm một đoạn code để phát sinh ra lỗi trong server khi xử lý yêu cầu
+    + Trong quá trình xử lý yêu cầu nếu có phát sinh ra lỗi trong server => Server sẽ phản hồi về với mã là 5xx
+    + Ví dụ cách thực hiện ở đây là Thêm đoạn mã sau vào hàm kiểm tra sinh viên: "Number.parseInt(hello)"

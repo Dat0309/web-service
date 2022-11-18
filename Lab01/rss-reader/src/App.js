@@ -31,13 +31,13 @@ export default function App() {
 
   return (
     <div className="App">
-      <form onSubmit={getRss}>
+      <form id="content" onSubmit={getRss}>
         <div>
-          <label> rss url</label>
+          <label>rss url</label>
           <br />
-          <input onChange={(e) => setRssUrl(e.target.value)} value={rssUrl} />
+          <input className="input" id="search-input" onChange={(e) => setRssUrl(e.target.value)} value={rssUrl} />
         </div>
-        <input type="submit" />
+        <input className="search" id="search-btn" type="submit" />
       </form>
       {items.map((item) => {
         return (
